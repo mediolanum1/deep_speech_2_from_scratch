@@ -12,7 +12,8 @@
 
 This repository contains a implementation of Deep Speech 2 Automatic Speech Recognition model made form scratch with PyTorch. Deep Speech 2 is an end-to-end deep learning model designed for Automatic Speech Recognition (ASR). It uses a combination of convolutional neural networks (CNNs) and recurrent neural networks (RNNs) to process raw audio features (e.g., spectrograms) and predict corresponding text transcriptions. The model is based on [Baidu DeepSpeech2](https://arxiv.org/abs/1512.02595) paper and follows this architecture:
 
-![architecture](https://velog.velcdn.com/images/pass120/post/5b167fc2-1d24-4b91-8d91-5baef1b6a541/image.png)
+<p align="center">
+<img alt="model architecture" src="https://velog.velcdn.com/images/pass120/post/5b167fc2-1d24-4b91-8d91-5baef1b6a541/image.png" width="500"></p>
 
 ## Installation
 
