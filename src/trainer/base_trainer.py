@@ -469,7 +469,7 @@ class BaseTrainer:
         state = {
             "arch": arch,
             "epoch": epoch,
-            "state_dict": self.model.state_dict(),
+            "model_state_dict": self.model.state_dict(),
             "optimizer": self.optimizer.state_dict(),
             "lr_scheduler": self.lr_scheduler.state_dict(),
             "monitor_best": self.mnt_best,
@@ -512,7 +512,7 @@ class BaseTrainer:
                 "Warning: Architecture configuration given in the config file is different from that "
                 "of the checkpoint. This may yield an exception when state_dict is loaded."
             )
-        self.model.load_state_dict(checkpoint["state_dict"])
+        self.model.load_state_dict(checkpoint["model_state_dict"])
 
         # load optimizer state from checkpoint only when optimizer type is not changed.
         if (
@@ -550,7 +550,7 @@ class BaseTrainer:
             print(f"Loading model weights from: {pretrained_path} ...")
         checkpoint = torch.load(pretrained_path, self.device)
 
-        if checkpoint.get("state_dict") is not None:
-            self.model.load_state_dict(checkpoint["state_dict"])
+        if checkpoint.get("model_state_dict") is not None:
+            self.model.load_state_dict(checkpoint["model_state_dict"])
         else:
             self.model.load_state_dict(checkpoint)

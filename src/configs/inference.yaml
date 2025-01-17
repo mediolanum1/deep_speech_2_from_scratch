@@ -1,12 +1,14 @@
 defaults:
-  - model: baseline
+  - model: deep_speech_2
   - metrics: example
-  - datasets: example_eval # we do not want to run inference on training data
+  - datasets: onebatchtest # we do not want to run inference on training data
   - dataloader: example
-  - transforms: example
+  - transforms: example_only_instance
   - _self_
+text_encoder:
+  _target_: src.text_encoder.CTCTextEncoder
 inferencer:
-  device_tensors: ["data_object", "labels"] # which tensors should be on device (ex. GPU)
+  device_tensors: [] # which tensors should be on device (ex. GPU)
   device: auto # device name or "auto"
   save_path: "example" # any name here, can be a dataset name
   seed: 1

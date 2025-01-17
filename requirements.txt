@@ -15,5 +15,5 @@ black
 isort
 pre-commit
 wget
-collections
+
 editdistance
