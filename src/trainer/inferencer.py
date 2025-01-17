@@ -122,7 +122,7 @@ class Inferencer(BaseTrainer):
         """
         # TODO change inference logic so it suits ASR assignment
         # and task pipeline
-
+    
         batch = self.move_batch_to_device(batch)
         batch = self.transform_batch(batch)  # transform batch on device -- faster
 
