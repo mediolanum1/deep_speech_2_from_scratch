@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="#about">About</a> •
-  <a href="training-results">Training results</a> •
+  <a href="#training-results">Training results</a> •
   <a href="#installation">Installation</a> •
   <a href="#how-to-use">How To Use</a> •
   <a href="#credits">Credits</a> •
