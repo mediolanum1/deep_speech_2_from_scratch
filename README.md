@@ -2,6 +2,7 @@
 
 <p align="center">
   <a href="#about">About</a> •
+  <a href="training-results">Training results</a> •
   <a href="#installation">Installation</a> •
   <a href="#how-to-use">How To Use</a> •
   <a href="#credits">Credits</a> •
@@ -14,6 +15,10 @@ This repository contains a implementation of Deep Speech 2 Automatic Speech Reco
 
 <p align="center">
 <img alt="model architecture" src="https://velog.velcdn.com/images/pass120/post/5b167fc2-1d24-4b91-8d91-5baef1b6a541/image.png" width="500"></p>
+
+## Training results
+
+Tables with model's outputs during training and evaluation can be viewed in [report](https://wandb.ai/lirobert2002-sapienza-universit-di-roma/Deep%20Speech%202/reports/Deep-Speech-2-ASR-model-training-process-and-results---VmlldzoxMTA0MzE4Nw). Overall model achieved WER of 0.44 and CER of 0.12 on average during evaluation
 
 ## Installation
 
